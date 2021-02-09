@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 class Chap
 {
@@ -27,10 +28,5 @@ private:
 
 int main()
 {
-	Chap c(1);
-	Chap d(2);
-
-	c.getName();
-	d.setName("Introduction");
-	d.getName();
+	std::vector<Chap> chapters{0, 1, 2};
 }
