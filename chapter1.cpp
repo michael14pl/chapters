@@ -3,8 +3,11 @@
 class Chap
 {
 public:
-	Chap(int n){ std::cout << "Constructor chapter " << n << std::endl; }
+	Chap(int n) : number(n)
+	{ std::cout << "Constructor chapter " << n << std::endl; }
 	~Chap(){ std::cout << "Destructor called" << std::endl; }
+private:
+	int number = 0;
 };
 
 int main()
