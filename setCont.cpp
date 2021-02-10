@@ -1,6 +1,8 @@
 #include <iostream>
+#include <utility>
 
-void setContent()
+
+std::pair<int, std::string> setContent(int n, std::string con)
 {
-	std::cout << "New content" << std::endl;
+	return std::make_pair(n, con);
 }

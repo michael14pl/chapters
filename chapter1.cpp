@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
-#include "./setCont.cpp"
+#include <utility>
+#include "setCont.cpp"
 
 
 class Chap
@@ -31,6 +32,8 @@ private:
 int main()
 {
 	std::vector<Chap> chapters{0, 1, 2};
-	setContent();
+	std::pair<int, std::string>firstContent;
+	firstContent = setContent(1, "Unce upon the time...");
+	chapters[1].setName(firstContent.second);
+	chapters[1].getName();
 }
-
