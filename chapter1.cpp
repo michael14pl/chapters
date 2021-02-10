@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include "./setCont.cpp"
+
 
 class Chap
 {
@@ -29,4 +31,6 @@ private:
 int main()
 {
 	std::vector<Chap> chapters{0, 1, 2};
+	setContent();
 }
+
