@@ -50,4 +50,5 @@ int main()
 	std::cout << "letter 'i' appears: " << specialLetter(firstPartChapter1, 'i') << " times" << std::endl;
 	std::cout << "letter 'o' appears: " << specialLetter(firstPartChapter1, 'o') << " times" << std::endl;
 	std::cout << "letter 'u' appears: " << specialLetter(firstPartChapter1, 'u') << " times" << std::endl;
+	std::cout << "letter 'y' appears: " << specialLetter(firstPartChapter1, 'y') << " times" << std::endl;
 }
