@@ -16,7 +16,7 @@ public:
 		{ chapterName = name; }
 	void getName()
 		{ std::cout << chapterName << std::endl; }
-	
+
 	void setChapterContent(std::string chapCont)
 		{ chapterContent = chapCont; }
 	std::string getChapterContent()
@@ -44,6 +44,7 @@ int main()
 	firstPartChapter1 = chapter1.getChapterContent();
 	std::cout << "Content1 - update: " << firstPartChapter1 << std::endl;
 
-	std::cout << "sum of signs in chapter1: " << ContentSigns(firstPartChapter1) << std::endl;
-	std::cout << "letter 'e' apperats : " << SpecialLetter(firstPartChapter1, 'e') << " times" << std::endl;
+	std::cout << "sum of signs in chapter1: " << contentSigns(firstPartChapter1) << std::endl;
+	std::cout << "letter 'e' appers: " << specialLetter(firstPartChapter1, 'e') << " times" << std::endl;
+	std::coutn << "letter 'a' appears: " << specialLetter(firstPartChapter1, 'a') << " times" << std::endl; 
 }

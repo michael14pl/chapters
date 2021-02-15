@@ -6,12 +6,12 @@ std::string addContents(std::string oldCont, std::string newCont)
 	return contSum.append(oldCont + " " + newCont);
 }
 
-int ContentSigns(std::string text)
+int contentSigns(std::string text)
 {
 	return text.length();
 }
 
-int SpecialLetter(std::string text, char let)
+int specialLetter(std::string text, char let)
 {
 	int specialLetterCount = 0;
 
