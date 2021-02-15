@@ -30,7 +30,7 @@ private:
 
 int main()
 {
-	Chap chapter1(1); 
+	Chap chapter1(1);
 
 	chapter1.setName("Once upon the time...");
 	std::cout << "Chapter title: ";
@@ -44,5 +44,6 @@ int main()
 	firstPartChapter1 = chapter1.getChapterContent();
 	std::cout << "Content1 - update: " << firstPartChapter1 << std::endl;
 
-	std::cout << "sum of signs in chapter1: " << conutContent(firstPartChapter1) << std::endl;
+	std::cout << "sum of signs in chapter1: " << ContentSigns(firstPartChapter1) << std::endl;
+	std::cout << "letter 'e' apperats : " << SpecialLetter(firstPartChapter1, 'e') << " times" << std::endl;
 }
