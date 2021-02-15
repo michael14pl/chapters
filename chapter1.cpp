@@ -8,30 +8,20 @@ class Chap
 {
 public:
 	Chap(int n) : number(n)
-	{
-	 std::cout << "Constructor chapter " << number << std::endl;
-	}
+		{ std::cout << "Constructor chapter " << number << std::endl; }
 	~Chap()
-	{
-	std::cout << "Destructor for " << number << " called" << std::endl;
-	}
+		{ std::cout << "Destructor for chapter " << number << " called" << std::endl; }
 
 	void setName(std::string name)
-	{
-	chapterName = name;
-	}
+		{ chapterName = name; }
 	void getName()
-	{
-	std::cout << chapterName << std::endl;
-	}
+		{ std::cout << chapterName << std::endl; }
+	
 	void setChapterContent(std::string chapCont)
-	{
-	chapterContent = chapCont;
-	}
+		{ chapterContent = chapCont; }
 	std::string getChapterContent()
-	{
-	return chapterContent;
-	}
+		{ return chapterContent; }
+
 private:
 	int number = 0;
 	std::string chapterName = "no name";
@@ -40,17 +30,19 @@ private:
 
 int main()
 {
-	std::vector<Chap> chapters{0, 1, 2};
+	Chap chapter1(1); 
 
-	chapters[1].setName("Once upon the time...");
+	chapter1.setName("Once upon the time...");
 	std::cout << "Chapter title: ";
-	chapters[1].getName();
+	chapter1.getName();
 
-	chapters[1].setChapterContent("Here will be first part of chapter.");
-	std::string firstPartChapter = chapters[1].getChapterContent();
-	std::cout << "Content1: " << firstPartChapter << std::endl;
+	chapter1.setChapterContent("Here will be first part of chapter.");
+	std::string firstPartChapter1 = chapter1.getChapterContent();
+	std::cout << "Content1: " << firstPartChapter1 << std::endl;
 
-	chapters[1].setChapterContent(addContents(firstPartChapter, "Here will be second part of chapter."));
-	std::string secondPartChapter = chapters[1].getChapterContent();
-	std::cout << "Content2: " << secondPartChapter << std::endl;
+	chapter1.setChapterContent(addContents(firstPartChapter1, "Here will be second part of chapter."));
+	firstPartChapter1 = chapter1.getChapterContent();
+	std::cout << "Content1 - update: " << firstPartChapter1 << std::endl;
+
+	std::cout << "sum of signs in chapter1: " << conutContent(firstPartChapter1) << std::endl;
 }
