@@ -47,10 +47,10 @@ int main()
 	std::cout << "sum of signs in chapter1: " << contentSigns(firstPartChapter1) << std::endl;
 	std::cout << "sum of characters in chapter1: " << contentSignsWithoutSpace(firstPartChapter1) << std::endl;
 	
-	std::cout << "letter 'e' appears: " << specialLetter(firstPartChapter1, 'e') << " times" << std::endl;
-	std::cout << "letter 'a' appears: " << specialLetter(firstPartChapter1, 'a') << " times" << std::endl; 
-	std::cout << "letter 'i' appears: " << specialLetter(firstPartChapter1, 'i') << " times" << std::endl;
-	std::cout << "letter 'o' appears: " << specialLetter(firstPartChapter1, 'o') << " times" << std::endl;
-	std::cout << "letter 'u' appears: " << specialLetter(firstPartChapter1, 'u') << " times" << std::endl;
-	std::cout << "letter 'y' appears: " << specialLetter(firstPartChapter1, 'y') << " times" << std::endl;
+	specialLetter(firstPartChapter1, 'e');
+	specialLetter(firstPartChapter1, 'a'); 
+	specialLetter(firstPartChapter1, 'o');
+	specialLetter(firstPartChapter1, 'u');
+	specialLetter(firstPartChapter1, 'i');
+	specialLetter(firstPartChapter1, 'y');
 }

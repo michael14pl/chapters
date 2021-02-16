@@ -20,7 +20,7 @@ int contentSignsWithoutSpace(std::string text)
 	return characters;
 }
 
-int specialLetter(std::string text, char let)
+void specialLetter(std::string text, char let)
 {
 	int specialLetterCount = 0;
 
@@ -29,5 +29,5 @@ int specialLetter(std::string text, char let)
 		if (n == let )
 			specialLetterCount++;
 	}
-	return specialLetterCount;
+	std::cout << "letter " << let << " appears: " << specialLetterCount << " times" << std::endl;
 }
