@@ -45,6 +45,8 @@ int main()
 	std::cout << "Content1 - update: " << firstPartChapter1 << std::endl;
 
 	std::cout << "sum of signs in chapter1: " << contentSigns(firstPartChapter1) << std::endl;
+	std::cout << "sum of characters in chapter1: " << contentSignsWithoutSpace(firstPartChapter1) << std::endl;
+	
 	std::cout << "letter 'e' appears: " << specialLetter(firstPartChapter1, 'e') << " times" << std::endl;
 	std::cout << "letter 'a' appears: " << specialLetter(firstPartChapter1, 'a') << " times" << std::endl; 
 	std::cout << "letter 'i' appears: " << specialLetter(firstPartChapter1, 'i') << " times" << std::endl;

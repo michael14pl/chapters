@@ -11,6 +11,17 @@ int contentSigns(std::string text)
 	return text.length();
 }
 
+int contentSignsWithoutSpace(std::string text)
+{
+	int characters = 0;
+	for(char n : text)
+	{
+		if(n != ' ')
+			characters++;
+	}
+	return characters;
+}
+
 int specialLetter(std::string text, char let)
 {
 	int specialLetterCount = 0;
