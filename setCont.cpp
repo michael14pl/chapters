@@ -7,9 +7,7 @@ std::string addContents(std::string oldCont, std::string newCont)
 }
 
 int contentSigns(std::string text)
-{
-	return text.length();
-}
+	{ return text.length(); }
 
 int contentSignsWithoutSpace(std::string text)
 {

@@ -40,7 +40,7 @@ int main()
 	std::string firstPartChapter1 = chapter1.getChapterContent();
 	std::cout << "Content1: " << firstPartChapter1 << std::endl;
 
-	chapter1.setChapterContent(addContents(firstPartChapter1, "Here will be second part of chapter."));
+	chapter1.setChapterContent(addContents(firstPartChapter1, "Here will be second part of chapter. Remember to commit changes!"));
 	firstPartChapter1 = chapter1.getChapterContent();
 	std::cout << "Content1 - update: " << firstPartChapter1 << std::endl;
 
